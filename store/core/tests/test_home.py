@@ -1,6 +1,7 @@
 from django.test import Client
 
-def test_status_code(client:Client):
+
+def test_status_code(client: Client):
     """quando accessamos nosso site fazemos uma chamada do tipo get
     logo na raiz da aplicação. Justamente a view que construimos
 
