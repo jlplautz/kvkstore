@@ -1,0 +1,16 @@
+body {
+  margin-top: 80px;
+}
+
+.ok {
+  color: #008000;
+}
+
+.no {
+  color: red;
+}
+
+span.required:after {
+  content: "*";
+  color: red;
+}
