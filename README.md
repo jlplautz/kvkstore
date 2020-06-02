@@ -23,3 +23,35 @@ kvkstore $ tree
   - pipenv install django
   - pipenv install python-decouple
 
+- **Criado projeto Django** 
+  - (kvkstore) kvkstore $ django-admin startproject store .
+```
+(kvkstore) kvkstore $ tree
+.
+├── LICENSE
+├── manage.py
+├── Pipfile
+├── Pipfile.lock
+├── README.md
+└── store
+    ├── asgi.py
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+```
+
+- **Criado o file .flake8**
+```
+[flake8]
+max-line-length = 120
+exclude = .venv
+```
+
+- **Criado o file .pyup.yml**
+
+```
+requirements:
+  - Pipfile
+  - Pipfile.lock
+```
