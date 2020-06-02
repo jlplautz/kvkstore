@@ -78,3 +78,25 @@ def test_status_code(client:Client):
     resp = client.get('/')
     assert resp.status_code == 200
 ```
+
+- **Secrety Key**
+  - (kvkstore) kvkstore $ heroku config:set DEBUG=False
+  - criar file .env -> DEBUG=True
+  - criar diretorio contrib- file env-sample -> DEBUG=False
+  - gerar uma Secrety key 
+  - inserir a secreta-Key no file .env
+```
+(kvkstore) kvkstore $ python
+Python 3.8.0 (default, Feb  3 2020, 16:24:25) 
+[GCC 7.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from django.core.management.utils import get_random_secret_key
+>>> get_random_secret_key()
+'secreta-key gerada'
+>>> quit()
+(kvkstore) kvkstore $ heroku config:set SECRET_KEY='secreta-key gerada'
+Setting SECRET_KEY and restarting ⬢ kvkstore... done, v9
+SECRET_KEY: secreta-key gerada
+```
+
+
