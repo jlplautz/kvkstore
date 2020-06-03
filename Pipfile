@@ -14,6 +14,13 @@ gunicorn = "*"
 psycopg2-binary = "*"
 dj-database-url = "*"
 django-s3-folder-storage = "*"
+xlwt = "*"
+pandas = "*"
+xlrd = "*"
+django-widget-tweaks = "*"
+pytz = "*"
+six = "*"
+collectfast = "*"
 
 [requires]
 python_version = "3.8"
