@@ -142,3 +142,31 @@ SECRET_KEY: secreta-key gerada
       'collectfast',
   )
   ```
+  
+- **Criar app estoque**
+  - (kvkstore) store $ mng startapp estoque
+  ```
+  (kvkstore) estoque $ tree
+  .
+  ├── admin.py
+  ├── apps.py
+  ├── forms.py
+  ├── __init__.py
+  ├── managers.py
+  ├── migrations
+  │   ├── 0001_initial.py
+  │   ├── __init__.py
+  ├── models.py
+  ├── templates
+  │   ├── estoque_detail.html
+  │   ├── estoque_entrada_form.html
+  │   ├── estoque_list.html
+  │   └── estoque_saida_form.html
+  ├── tests.py
+  ├── urls.py
+  └── views.py
+  ```
+  - (kvkstore) kvkstore $ mng makemigrations
+  - (kvkstore) kvkstore $ mng migrate
+  - kvkstore $ pipenv install django-bootstrap-form
+  - (kvkstore) kvkstore $ pip freeze > requirements.txt
