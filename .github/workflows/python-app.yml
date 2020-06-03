@@ -19,7 +19,7 @@ jobs:
           POSTGRES_USER: kvkstore
           POSTGRES_PASSWORD: kvkstore
           POSTGRES_DB: storedb
-        ports: ['5433:5432']
+        ports: ['5434:5432']
 
     steps:
     - uses: actions/checkout@v2

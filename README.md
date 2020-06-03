@@ -99,5 +99,15 @@ Setting SECRET_KEY and restarting ⬢ kvkstore... done, v9
 SECRET_KEY: secreta-key gerada
 ```
 
-
+- **Criar conexão com BD**
+  - kvkstore $ pipenv install psycopg2-binary
+  - kvkstore $ pipenv install dj-database-url
+  - file settings.py
+  ```
+  default_db_url = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
+  parse_database = partial(dj_database_url.parse, conn_max_age=600)
+  DATABASES = {
+      'default': config('DATABASE_URL', default=default_db_url, cast=parse_database)
+  }
+  ```
 
