@@ -132,3 +132,13 @@ SECRET_KEY: secreta-key gerada
   ├── produtos_exportados.csv
   └── produtos.xlsx
   ```
+  
+- **Inserido a lib Collectfast no INSTALLED_APPS**
+  ```
+  STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+  COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
+  INSTALLED_APPS = (
+      # ...
+      'collectfast',
+  )
+  ```
