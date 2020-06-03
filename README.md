@@ -111,3 +111,24 @@ SECRET_KEY: secreta-key gerada
   }
   ```
 
+- **Criar app produto**
+  - (kvkstore) store $ mng startapp produto
+  - kvkstore $ pipenv install xlwt
+  - kvkstore $ pipenv install pandas
+  - kvkstore $ pipenv install xlrd
+  - kvkstore $ pipenv install django-widget-tweaks
+  - kvkstore $ pipenv install pytz
+  - kvkstore $ pipenv install collectfast
+
+- **criar as migraçoes**
+  - (kvkstore) kvkstore $ mng makemigrations
+  - (kvkstore) kvkstore $ mng migrate
+
+- **Criado o diretorio fix**
+  ```
+  fix $ tree
+  .
+  ├── produtos.csv
+  ├── produtos_exportados.csv
+  └── produtos.xlsx
+  ```
