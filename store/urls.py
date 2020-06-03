@@ -20,6 +20,7 @@ from django.urls import path, include
 urlpatterns = [
     path('', include('store.core.urls')),
     path('produto/', include('store.produto.urls')),
+    path('estoque/', include('store.estoque.urls')),
     path('admin/', admin.site.urls),
     path('logout/', LogoutView.as_view(), name='logout'),
 ]

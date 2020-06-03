@@ -50,9 +50,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Apps de terceiros
     'widget_tweaks',
+    'bootstrapform',
     # Minhas apps
     'store.core',
     'store.produto',
+    'store.estoque',
 ]
 
 MIDDLEWARE = [

@@ -21,6 +21,7 @@ django-widget-tweaks = "*"
 pytz = "*"
 six = "*"
 collectfast = "*"
+django-bootstrap-form = "*"
 
 [requires]
 python_version = "3.8"
