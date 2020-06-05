@@ -199,7 +199,8 @@ SECRET_KEY: secreta-key gerada
   - (kvkstore) kvkstore $ mng makemigrations
   - (kvkstore) kvkstore $ mng migrate
 
-
+- **Desinstalado a lib Pillow**
+  - kvkstore $ pipenv uninstall Pillow
 
 
 
