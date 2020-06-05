@@ -170,3 +170,37 @@ SECRET_KEY: secreta-key gerada
   - (kvkstore) kvkstore $ mng migrate
   - kvkstore $ pipenv install django-bootstrap-form
   - (kvkstore) kvkstore $ pip freeze > requirements.txt
+
+
+- **Criar app users**
+  - (kvkstore) store $ mng startapp users
+  ```
+  (kvkstore) users $ tree
+  .
+  ├── admin.py
+  ├── apps.py
+  ├── forms.py
+  ├── __init__.py
+  ├── migrations
+  │   ├── 0001_initial.py
+  │   ├── __init__.py
+  ├── models.py
+  ├── signals.py
+  ├── templates
+  │   └── users
+  │       ├── login.html
+  │       ├── logout.html
+  │       ├── profile.py
+  │       └── register.py
+  ├── tests.py
+  └── views.py
+  ```
+  - (kvkstore) store $ pipenv install pillow
+  - (kvkstore) kvkstore $ mng makemigrations
+  - (kvkstore) kvkstore $ mng migrate
+
+
+
+
+
+

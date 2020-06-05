@@ -23,7 +23,8 @@ class Migration(migrations.Migration):
                 ('modified', models.DateTimeField(auto_now=True, verbose_name='modificado em')),
                 ('nf', models.PositiveIntegerField(blank=True, null=True, verbose_name='nota fiscal')),
                 ('movimento', models.CharField(blank=True, choices=[('e', 'entrada'), ('s', 'saida')], max_length=1)),
-                ('funcionario', models.ForeignKey(blank=True, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                ('funcionario', models.ForeignKey(
+                    blank=True, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
             options={
                 'ordering': ('-created',),
@@ -35,7 +36,8 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('quantidade', models.PositiveIntegerField()),
                 ('saldo', models.PositiveIntegerField(blank=True)),
-                ('estoque', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='estoques', to='estoque.Estoque')),
+                ('estoque', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, related_name='estoques', to='estoque.Estoque')),
                 ('produto', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='produto.Produto')),
             ],
             options={
