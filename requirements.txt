@@ -1,4 +1,4 @@
 certifi==2020.4.5.1
-pipenv==2018.11.26
+pipenv==2020.6.2
 virtualenv==16.7.9
 virtualenv-clone==0.5.3
