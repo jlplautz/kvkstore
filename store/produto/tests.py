@@ -1,3 +1,5 @@
-# from django.test import TestCase
+from store.produto.apps import ProdutoConfig
 
-# Create your tests here.
+
+def test_produto():
+    assert ProdutoConfig.name == 'produto'
