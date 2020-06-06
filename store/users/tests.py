@@ -1,3 +1,5 @@
-# from django.test import TestCase
+from store.users.apps import UsersConfig
 
-# Create your tests here.
+
+def test_users():
+    assert UsersConfig.name == 'users'
