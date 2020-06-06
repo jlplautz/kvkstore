@@ -199,8 +199,13 @@ SECRET_KEY: secreta-key gerada
   - (kvkstore) kvkstore $ mng makemigrations
   - (kvkstore) kvkstore $ mng migrate
 
-- **Desinstalado a lib Pillow**
-  - kvkstore $ pipenv uninstall Pillow
+- **Foi criado testes em todas as apps**
+  ```
+  from store.users.apps import UsersConfig
+
+  def test_users():
+      assert UsersConfig.name == 'users'
+  ```
 
 
 
