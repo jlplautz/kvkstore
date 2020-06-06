@@ -1,5 +1,5 @@
 from store.estoque.apps import EstoqueConfig
 
 
-def test_estoque():
+def test_app_config_name():
     assert EstoqueConfig.name == 'estoque'
