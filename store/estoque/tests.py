@@ -1,3 +1,5 @@
-# from django.test import TestCase
+from store.estoque.apps import EstoqueConfig
 
-# Create your tests here.
+
+def test_estoque():
+    assert EstoqueConfig.name == 'estoque'
