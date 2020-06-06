@@ -51,10 +51,12 @@ INSTALLED_APPS = [
     # Apps de terceiros
     'widget_tweaks',
     'bootstrapform',
+    'crispy_forms',
     # Minhas apps
     'store.core',
     'store.produto',
     'store.estoque',
+    'store.users',
 ]
 
 MIDDLEWARE = [
@@ -186,3 +188,7 @@ if AWS_ACCESS_KEY_ID:
 
     INSTALLED_APPS.append('s3_folder_storage')
     INSTALLED_APPS.append('storages')
+
+
+LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = 'login'

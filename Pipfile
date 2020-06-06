@@ -22,6 +22,8 @@ pytz = "*"
 six = "*"
 collectfast = "*"
 django-bootstrap-form = "*"
+django-crispy-forms = "*"
+safety = "*"
 
 [requires]
 python_version = "3.8"

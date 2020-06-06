@@ -13,3 +13,19 @@ services:
       - POSTGRES_USER=kvkstore
     ports:
       - 5434:5432
+
+# Name: storedb
+#Server: Docker
+#Image ID or name: postgree:latest
+#Bind ports: 5432:5432
+#Bind mounts: /home/plautz/Pycharm/project/kvkstore/db:/var/lib/postgres/data
+#Environments variables: POSTGRES_PASSWORD=docker; POSTGRESUSER=postgres
+# command preview: arquivo para rodar o docker do pycharm
+#docker run
+#- p 5432:5432 => container:host
+#- v
+#/home/plautz/Pycharm/project/kvkstore/db:/var/lib/postgres/data
+#-- POSTGRES_PASSWORD=kvkstore
+#-- POSTGRES_USER=kvkstore
+#-- name psserver
+#postgres: latest  => imagem na ultima versão
