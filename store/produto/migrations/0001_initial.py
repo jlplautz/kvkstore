@@ -33,7 +33,8 @@ class Migration(migrations.Migration):
                 ('estoque', models.IntegerField(verbose_name='estoque atual')),
                 ('estoque_minimo', models.PositiveIntegerField(default=0, verbose_name='estoque mínimo')),
                 ('data', models.DateField(blank=True, null=True)),
-                ('categoria', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='produto.Categoria')),
+                ('categoria', models.ForeignKey(
+                    blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='produto.Categoria')),
             ],
             options={
                 'ordering': ('produto',),
