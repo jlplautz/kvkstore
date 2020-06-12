@@ -1,7 +1,7 @@
 from django.db.models.signals import post_save
 from django.contrib.auth.models import User     # sender
 from django.dispatch import receiver
-from .models import Profile     # create a profile and function
+from users.models import Profile     # create a profile and function
 
 
 @receiver(post_save, sender=User)
