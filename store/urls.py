@@ -26,7 +26,7 @@ urlpatterns = [
     path('estoque/', include('store.estoque.urls')),
     path('admin/', admin.site.urls),
     path('logout/', LogoutView.as_view(), name='logout'),
-    path('users/', user_views.profile, name='profile'),
+    path('users/profile', user_views.profile, name='profile'),
     path('users/register', user_views.register, name='register'),
     path('users/login', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('users/logout', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
