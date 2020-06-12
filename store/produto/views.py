@@ -14,7 +14,6 @@ from .models import Produto
 from .forms import ProdutoForm
 
 
-
 def produto_list(request):
     template_name = 'produto_list.html'
     objects = Produto.objects.all()

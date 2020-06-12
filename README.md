@@ -142,3 +142,71 @@ SECRET_KEY: secreta-key gerada
       'collectfast',
   )
   ```
+  
+- **Criar app estoque**
+  - (kvkstore) store $ mng startapp estoque
+  ```
+  (kvkstore) estoque $ tree
+  .
+  ├── admin.py
+  ├── apps.py
+  ├── forms.py
+  ├── __init__.py
+  ├── managers.py
+  ├── migrations
+  │   ├── 0001_initial.py
+  │   ├── __init__.py
+  ├── models.py
+  ├── templates
+  │   ├── estoque_detail.html
+  │   ├── estoque_entrada_form.html
+  │   ├── estoque_list.html
+  │   └── estoque_saida_form.html
+  ├── tests.py
+  ├── urls.py
+  └── views.py
+  ```
+  - (kvkstore) kvkstore $ mng makemigrations
+  - (kvkstore) kvkstore $ mng migrate
+  - kvkstore $ pipenv install django-bootstrap-form
+  - (kvkstore) kvkstore $ pip freeze > requirements.txt
+
+
+- **Criar app users**
+  - (kvkstore) store $ mng startapp users
+  ```
+  (kvkstore) users $ tree
+  .
+  ├── admin.py
+  ├── apps.py
+  ├── forms.py
+  ├── __init__.py
+  ├── migrations
+  │   ├── 0001_initial.py
+  │   ├── __init__.py
+  ├── models.py
+  ├── signals.py
+  ├── templates
+  │   └── users
+  │       ├── login.html
+  │       ├── logout.html
+  │       ├── profile.py
+  │       └── register.py
+  ├── tests.py
+  └── views.py
+  ```
+  - (kvkstore) store $ pipenv install pillow
+  - (kvkstore) kvkstore $ mng makemigrations
+  - (kvkstore) kvkstore $ mng migrate
+
+- **Foi criado testes em todas as apps**
+  ```
+  from store.users.apps import UsersConfig
+
+  def test_users():
+      assert UsersConfig.name == 'users'
+  ```
+
+
+
+

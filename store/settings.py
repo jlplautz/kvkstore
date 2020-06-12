@@ -37,8 +37,8 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
 # Application definition
-STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
-COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
+# STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+# COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -50,9 +50,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Apps de terceiros
     'widget_tweaks',
+    'bootstrapform',
+    'crispy_forms',
     # Minhas apps
     'store.core',
     'store.produto',
+    'store.estoque',
+    'store.users',
 ]
 
 MIDDLEWARE = [
@@ -143,10 +147,12 @@ USE_TZ = True
 # Configuração de ambiente de desenvolvimento
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'core/static')
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
 
@@ -184,3 +190,7 @@ if AWS_ACCESS_KEY_ID:
 
     INSTALLED_APPS.append('s3_folder_storage')
     INSTALLED_APPS.append('storages')
+
+
+LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = 'login'

@@ -9,8 +9,7 @@ def import_xlsx(filename):
     workbook = xlrd.open_workbook(filename)
     sheet = workbook.sheet_by_index(0)
 
-    fields = ('produto', 'ncm', 'importado',
-              'preco', 'estoque', 'estoque_minimo')
+    fields = ('produto', 'ncm', 'importado', 'preco', 'estoque', 'estoque_minimo')
 
     categorias = []
     for row in range(1, sheet.nrows):
