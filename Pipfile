@@ -24,6 +24,7 @@ collectfast = "*"
 django-bootstrap-form = "*"
 django-crispy-forms = "*"
 safety = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.8"
