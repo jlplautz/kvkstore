@@ -44,7 +44,7 @@ safety==1.9.0
 six==1.15.0
 sqlparse==0.3.1
 toml==0.10.1
-typing-extensions==3.7.4.2
+typing-extensions==3.7.4.3
 urllib3==1.25.9
 users==1.0.dev0
 wcwidth==0.2.5
