@@ -12,7 +12,7 @@ django-bootstrap-form==3.4
 django-crispy-forms==1.9.2
 django-email-users==1.1.0
 django-s3-folder-storage==0.5
-django-storages==1.9.1
+django-storages==1.10
 django-widget-tweaks==1.4.8
 docutils==0.16
 dparse==0.5.1
