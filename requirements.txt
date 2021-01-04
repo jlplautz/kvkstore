@@ -7,7 +7,7 @@ chardet==3.0.4
 click==7.1.2
 Collectfast==2.2.0
 dj-database-url==0.5.0
-Django==3.1.1
+Django==3.1.5
 django-bootstrap-form==3.4
 django-crispy-forms==1.9.2
 django-email-users==1.1.0
