@@ -40,7 +40,7 @@ pytz==2020.1
 PyYAML==5.3.1
 requests==2.24.0
 s3transfer==0.3.3
-safety==1.9.0
+safety==1.10.2
 six==1.15.0
 sqlparse==0.3.1
 toml==0.10.1
