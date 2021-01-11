@@ -346,11 +346,10 @@
         },
         "safety": {
             "hashes": [
-                "sha256:23bf20690d4400edc795836b0c983c2b4cbbb922233108ff925b7dd7750f00c9",
-                "sha256:86c1c4a031fe35bd624fce143fbe642a0234d29f7cbf7a9aa269f244a955b087"
+                "sha256:66972e94bc7252d156386ffbe89ceeecdf82cebe1f2bf4e1375cc7fe473b54fe",
+                "sha256:9e35be579f7589cde300faaf947eefb6a4c1a63ae2a79edb370805ef99487c5f"
             ],
-            "index": "pypi",
-            "version": "==1.9.0"
+            "version": "==1.10.2"
         },
         "six": {
             "hashes": [
