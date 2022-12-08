@@ -351,12 +351,8 @@
             "version": "==0.3.3"
         },
         "safety": {
-            "hashes": [
-                "sha256:23bf20690d4400edc795836b0c983c2b4cbbb922233108ff925b7dd7750f00c9",
-                "sha256:86c1c4a031fe35bd624fce143fbe642a0234d29f7cbf7a9aa269f244a955b087"
-            ],
-            "index": "pypi",
-            "version": "==1.9.0"
+            "hashes": [],
+            "version": "==2.3.4"
         },
         "six": {
             "hashes": [
