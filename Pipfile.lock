@@ -119,11 +119,8 @@
             "version": "==1.4.8"
         },
         "docutils": {
-            "hashes": [
-                "sha256:a71042bb7207c03d5647f280427f14bfbd1a65c9eb84f4b341d85fafb6bb4bdf",
-                "sha256:e2ffeea817964356ba4470efba7c2f42b6b0de0b04e66378507e3e2504bbff4c"
-            ],
-            "version": "==0.17"
+            "hashes": [],
+            "version": "==0.21.2"
         },
         "dparse": {
             "hashes": [
